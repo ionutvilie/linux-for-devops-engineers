@@ -44,7 +44,7 @@ $ ls -ltr /var/log/       # t (sort by modification time, newest first) r (rever
 
 ### `cat`
 
-Short for concatenate, it is used to list the contents of a file on the standard output \(sdout\)
+Short for concatenate, it is used to list the contents of a file on the standard output \(stdout\)
 
 ```bash
 $ cat metasyntactic-vars.txt 
