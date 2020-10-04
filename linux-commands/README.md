@@ -241,6 +241,59 @@ a x x c
 
 ## Networking
 
+### `ping`
+
+The ping utility uses the ICMP protocol's mandatory ECHO_REQUEST datagram to elicit an ICMP ECHO_RESPONSE from a host or gateway
+
+```bash
+# ping find out if a host is alive
+# this command causes false negative if ICMP protocol is blocked by the host
+PING google.ro (172.217.19.99): 56 data bytes
+64 bytes from 172.217.19.99: icmp_seq=0 ttl=118 time=32.413 ms
+64 bytes from 172.217.19.99: icmp_seq=1 ttl=118 time=32.734 ms
+64 bytes from 172.217.19.99: icmp_seq=2 ttl=118 time=31.968 ms
+```
+
+### `dig`
+
+dig (domain information groper) is a flexible tool for interrogating DNS name servers.
+
+```bash
+# print the destination IP for the A Record
+$ dig +short google.ro 
+172.217.18.67
+# print answer section only
+$ dig +noall +answer google.ro
+google.ro.		138	IN	A	172.217.19.99
+```
+
+
+### `nslookup`
+
+Nslookup is a program to query Internet domain name servers.
+
+```bash
+$ nslookup google.ro 
+Server:		192.168.100.1
+Address:	192.168.100.1#53
+
+Non-authoritative answer:
+Name:	google.ro
+Address: 172.217.18.67
+```
+
+### `traceroute`
+
+traceroute -- print the route packets take to network host
+
+```bash
+$ traceroute google.ro 
+traceroute to google.ro (172.217.19.99), 64 hops max, 52 byte packets
+ 1  192.168.100.1 (192.168.100.1)  4.364 ms  1.155 ms  0.993 ms
+ 2  109.98.30.1 (109.98.30.1)  3.786 ms  3.916 ms  3.441 ms
+13  bud02s27-in-f3.1e100.net (172.217.19.99)  32.314 ms  33.097 ms  31.379 ms
+```
+
 ### `telnet`
 
 User interface to the TELNET protocol. Useful to test remote open ports.
