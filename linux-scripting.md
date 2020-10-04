@@ -10,7 +10,7 @@ Running the script will result in the below output \(output tab\)
 
 {% tabs %}
 {% tab title="hello-world.sh" %}
-```text
+```bash
 #!/usr/bin/env bash
 message="Hello World"
 
@@ -20,7 +20,7 @@ echo   "with echo: ${message}"          # Not portable
 {% endtab %}
 
 {% tab title="Output" %}
-```text
+```bash
 $ ./hello-world.sh 
 with printf: Hello World
 with echo: Hello World
