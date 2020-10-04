@@ -1,4 +1,4 @@
-# Linux Filesystem
+# Filesystem
 
 A simple description of the UNIX system, also applicable to Linux, is this:
 

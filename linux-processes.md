@@ -1,7 +1,3 @@
----
-description: linux processes
----
-
 # Processes
 
 ## List processes
