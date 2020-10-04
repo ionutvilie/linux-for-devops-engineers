@@ -33,19 +33,35 @@ One of the key differences between regular pipes and named pipes is that named p
 
 A named pipe transfers messages one by one first in first out.  A named pipe can be created with `mkfifo` command.   
 
+{% tabs %}
+{% tab title="Bash" %}
 ```bash
 $ mkfifo my-named-pipe
 $ ls -al my-named-pipe 
 prw-r--r--  1 ionut.ilie  staff  0 Oct  4 20:23 my-named-pipe
 # let's write 5 numbers in a pipe
 for i in {1..5}; do echo "number $i" > my-named-pipe ; done
-# move about command in bg or open a new terminal and exec
 # it maight apear as stuck but it actualy waits for a consumer
+# move about command in bg or open a new terminal and
 # start a consumer for the pipe
 tail -f my-named-pipe 
 
 
 ```
+{% endtab %}
+
+{% tab title="Bash-2" %}
+```
+# start a consumer for the pipe
+$ tail -f my-named-pipe 
+number 1
+number 2
+number 3
+number 4
+number 5
+```
+{% endtab %}
+{% endtabs %}
 
 
 
