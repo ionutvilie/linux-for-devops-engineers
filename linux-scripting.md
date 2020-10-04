@@ -6,10 +6,8 @@
 
 Running the hello-world.sh script will result in the below output \(output tab\)
 
-{% file src=".gitbook/assets/hello-world.sh" %}
-
 {% tabs %}
-{% tab title="hello-world.sh" %}
+{% tab title="Script" %}
 ```bash
 #!/usr/bin/env bash
 message="Hello World"
@@ -25,6 +23,10 @@ $ ./hello-world.sh
 with printf: Hello World
 with echo: Hello World
 ```
+{% endtab %}
+
+{% tab title="Files" %}
+{% file src=".gitbook/assets/hello-world.sh" caption="hello-world.sh" %}
 {% endtab %}
 {% endtabs %}
 
