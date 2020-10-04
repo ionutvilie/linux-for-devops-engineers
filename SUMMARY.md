@@ -8,4 +8,5 @@
   * [Working with files](linux-commands/working-with-files.md)
 * [Processes](linux-processes.md)
 * [Scripting](linux-scripting.md)
+* [Pipes](linux-pipes.md)
 
