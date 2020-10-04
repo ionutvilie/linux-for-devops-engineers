@@ -2,11 +2,11 @@
 
 ## Linux scripting 
 
-
-
 ### hello world
 
-Running the script will result in the below output \(output tab\)
+Running the hello-world.sh script will result in the below output \(output tab\)
+
+{% file src=".gitbook/assets/hello-world.sh" %}
 
 {% tabs %}
 {% tab title="hello-world.sh" %}
