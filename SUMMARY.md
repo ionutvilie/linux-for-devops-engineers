@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Intro](README.md)
-* [Course description](intro.md)
+* [Course description](course-description.md)
 * [Quick Start](linux-quick-start.md)
 * [Filesystem](linux-filesystem.md)
 * [Permissions](linux-permissions.md)
