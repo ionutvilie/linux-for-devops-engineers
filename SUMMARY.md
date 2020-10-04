@@ -6,4 +6,5 @@
 * [Permissions](linux-permissions.md)
 * [Basic Commands](linux-commands.md)
 * [Processes](linux-processes.md)
+* [Scripting](linux-scripting.md)
 
