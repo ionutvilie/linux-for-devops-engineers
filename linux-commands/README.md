@@ -243,7 +243,7 @@ a x x c
 
 ### `ping`
 
-The ping utility uses the ICMP protocol's mandatory ECHO_REQUEST datagram to elicit an ICMP ECHO_RESPONSE from a host or gateway
+The ping utility uses the ICMP protocol's mandatory ECHO\_REQUEST datagram to elicit an ICMP ECHO\_RESPONSE from a host or gateway
 
 ```bash
 # ping find out if a host is alive
@@ -256,7 +256,7 @@ PING google.ro (172.217.19.99): 56 data bytes
 
 ### `dig`
 
-dig (domain information groper) is a flexible tool for interrogating DNS name servers.
+dig \(domain information groper\) is a flexible tool for interrogating DNS name servers.
 
 ```bash
 # print the destination IP for the A Record
@@ -264,9 +264,8 @@ $ dig +short google.ro
 172.217.18.67
 # print answer section only
 $ dig +noall +answer google.ro
-google.ro.		138	IN	A	172.217.19.99
+google.ro.        138    IN    A    172.217.19.99
 ```
-
 
 ### `nslookup`
 
@@ -274,11 +273,11 @@ Nslookup is a program to query Internet domain name servers.
 
 ```bash
 $ nslookup google.ro 
-Server:		192.168.100.1
-Address:	192.168.100.1#53
+Server:        192.168.100.1
+Address:    192.168.100.1#53
 
 Non-authoritative answer:
-Name:	google.ro
+Name:    google.ro
 Address: 172.217.18.67
 ```
 

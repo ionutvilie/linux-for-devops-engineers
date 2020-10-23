@@ -30,6 +30,10 @@ with echo: Hello World
 {% endtab %}
 {% endtabs %}
 
+### fun coffee break script
+
+{% file src=".gitbook/assets/coffee-break-script.sh" caption="Coffee Break Script" %}
+
 ### tools
 
 [https://www.shellcheck.net/](https://www.shellcheck.net/) - finds bugs in your shell scripts.
