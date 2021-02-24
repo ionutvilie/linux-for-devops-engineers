@@ -3,7 +3,7 @@
 * "On a UNIX system, everything is a file; if something is not a file, it is a process."
 * A directory is just a file containing names of other files
 
-### `pwd`
+## `pwd`
 
 Lists path of the current working directory \(folder\)
 
@@ -12,7 +12,7 @@ $ pwd
 /home/ubuntu
 ```
 
-### `cd`
+## `cd`
 
 Change directory command is used to change the current working directory
 
@@ -26,7 +26,7 @@ $ cd                      # cd to home dir
 $ cd -                    # cd to previous dir
 ```
 
-### `ls`
+## `ls`
 
 Lists the contents of a directory
 
@@ -38,7 +38,7 @@ $ ls -alh /var/log/       # human-readable with -l and -s, print sizes like 1K 2
 $ ls -ltr /var/log/       # t (sort by modification time, newest first) r (reverse order while sorting)
 ```
 
-### `cat`
+## `cat`
 
 Short for concatenate, it is used to list the contents of a file on the standard output \(stdout\)
 
@@ -50,7 +50,7 @@ buz
 qux
 ```
 
-### `cp`
+## `cp`
 
 Copy Files
 
@@ -59,7 +59,7 @@ Copy Files
 cp metasyntactic-vars.txt metasyntactic-vars
 ```
 
-### `mv`
+## `mv`
 
 Move or Rename Files
 
@@ -72,7 +72,7 @@ metasyntactic-vars.txt
 $ mv /tmp/metasyntactic-vars.txt .                # move file to current location
 ```
 
-### `mkdir` & `rmdir`
+## `mkdir` & `rmdir`
 
 Make a new directory or remove dir
 
@@ -83,7 +83,7 @@ mkdir -p /tmp/test/{foo,bar,buz}   # make dirs foo bar buz in /tmp/test/ and cre
 rmdir /tmp/foo                     # removes a non-empty directory
 ```
 
-### `rm`
+## `rm`
 
 Remove files or directories.
 
@@ -93,7 +93,7 @@ rm -r /tmp/bar/foo          # removes foo directory
 rm metasyntactic-vars.txt   # removes metasyntactic-vars.txt file
 ```
 
-### `file`
+## `file`
 
 Determine file type
 
@@ -106,7 +106,7 @@ $ file sbin
 sbin: symbolic link to usr/sbin
 ```
 
-### `locate`
+## `locate`
 
 locate a file
 
@@ -114,7 +114,7 @@ locate a file
 locate syslog
 ```
 
-### `find`
+## `find`
 
 Search for a file.
 
