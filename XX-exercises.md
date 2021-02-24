@@ -28,12 +28,11 @@
         2:bar
         3-buz
 
-- metasyntactic-vars has 4 lines, How do i want to create a new file without the last 2 lines.
+- metasyntactic-vars has 4 lines, How do one create a new file without the last 2 lines ?
     - use `>` to redirect the output to a new file
     - use `>>` to append the output to a new file
 
 - my screenshot folder requires clean-up i want to `find` all `png` files that are older than 1 day.
-
 
 - given below file structure how do i remove any other file that is not `metasyntactic-vars`
 

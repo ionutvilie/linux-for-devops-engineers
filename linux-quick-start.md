@@ -4,7 +4,7 @@
 
 * Make the user `root` \(system administrator's account\) accessible via ssh.
 * Run applications as root, applications might contain a vulnerability if the application is compromised it can run malicious code as root.
-* `rm select * from ...` in your console, careful with what you have in your system clipboard.  
+* copy/paste `rm select * from ...` in your console, careful with what you have in your system clipboard.  
 
 ## Avoid
 

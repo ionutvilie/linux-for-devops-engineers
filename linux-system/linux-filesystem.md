@@ -124,7 +124,7 @@ Filesystem        Inodes IUsed     IFree IUse% Mounted on
 /dev/sda2      122085376 30050 122055326    1% /mnt/sgt2t
 ```
 
-### Sources:
+## Sources:
 
 * [https://tldp.org/LDP/intro-linux/html/sect\_03\_01.html](https://tldp.org/LDP/intro-linux/html/sect_03_01.html)
 * [https://www.linux.com/training-tutorials/linux-filesystem-explained/](https://www.linux.com/training-tutorials/linux-filesystem-explained/)  
