@@ -1,6 +1,6 @@
 # Working with text files
 
-## `head` $ `tail`
+## `head` & `tail`
 
 * head - output the first part of files
 * tail - output the last part of files

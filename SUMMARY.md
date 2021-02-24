@@ -5,6 +5,7 @@
 * [Quick Start](linux-quick-start.md)
 * [Linux System](linux-system/README.md)
   * [Filesystem](linux-system/linux-filesystem.md)
+  * [Pipes](linux-system/linux-pipes.md)
   * [Permissions](linux-system/linux-permissions.md)
   * [User Env](linux-system/user-env.md)
   * [Root Env](linux-system/root-env.md)
@@ -16,5 +17,4 @@
   * [File Transfer](linux-commands/file-transfer.md)
   * [Processes](linux-commands/processes.md)
   * [Other](linux-commands/other.md)
-* [Pipes](linux-pipes.md)
 * [Scripting](linux-scripting.md)
