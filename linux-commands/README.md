@@ -2,10 +2,6 @@
 
 Environment: [https://www.katacoda.com/courses/ubuntu/playground2004](https://www.katacoda.com/courses/ubuntu/playground2004)
 
-
-
-
-
 ## Others
 
 ### `tar`

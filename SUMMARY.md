@@ -6,7 +6,7 @@
 * [Filesystem](linux-filesystem.md)
 * [Permissions](linux-permissions.md)
 * [Basic Commands](linux-commands/README.md)
-  * [Working with files](linux-commands/working-with-files.md)
+  * [Files and directory's](linux-commands/working-with-files.md)
 * [Processes](linux-processes.md)
 * [Pipes](linux-pipes.md)
 * [Scripting](linux-scripting.md)
