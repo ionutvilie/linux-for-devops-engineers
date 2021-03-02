@@ -1,6 +1,10 @@
+---
+description: Draft - Work in Progress
+---
+
 # Intro
 
-This book is meant to be a Linux crash course used in induction training for new DevOps engineers. It contains knowledge I gained working as a System Engineer/Application administrator.  
+This book is intennded to be a Linux crash course used in induction training for new DevOps engineers. It contains knowledge I gained working as a System Engineer/Application Administrator/DevOps/SRE.  
 
-Status Draft-WIP, I am still deciding on the structure and what else to add. 
+I am still deciding on the structure and what else to add. 
 
