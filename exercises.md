@@ -1,7 +1,5 @@
 # Exercises
 
-## Day 1
-
 - What is the linux kernel. (keep it simple)
 
 - How can I list the kernel name, version and release
@@ -17,9 +15,9 @@ Ubuntu 20.04 LTS \n \l
 ```
 
 - How can I configure my user environment ?
-- How can I to another user rwx access to my files ? 
-- How can I restrict other user including group access to my files ?
-- How can I make katacode `PS1` variable show as `<user>@<host>:<working directory> $` or `<user>@<host>:<working directory> $`. How can i make it permanent, how can i make it only for my current session ?
+- How can I give another user `rwx` access to one of my file (group access) ?
+- How can I restrict other users access to one of my file (group access) ?
+- How can I make katacode `PS1` variable show as `<user>@<host>:<working directory> $` or `<user>@<host>:katacode $`. How can i make it permanent, how can i make it only for my current session ?
 
 ```bash
 root@katacode:~ $ cd /var/log/journal/
