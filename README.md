@@ -1,10 +1,33 @@
----
-description: Draft - Work in Progress
----
-
 # Intro
 
-This book is intennded to be a Linux crash course used in induction training for new DevOps engineers. It contains knowledge I gained working as a System Engineer/Application Administrator/DevOps/SRE.  
+## Install Hugo Mac
 
-I am still deciding on the structure and what else to add. 
+```bash
+# what are tests ?
+(
+  export VERSION=0.115.1
+  cd ${HOME}/Downloads
+  curl -L -o hugo_darwin-universal.tar.gz https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_${VERSION}_darwin-universal.tar.gz
+  tar --extract --file=hugo_darwin-universal.tar.gz hugo
+  mv hugo ${HOME}/bin
+  chmod +x ${HOME}/bin/hugo
+  rm hugo_darwin-universal.tar.gz
+)
+```
 
+## Serve with Hugo
+
+```bash
+hugo serve
+```
+
+## Create content
+
+```bash
+# hugo new index.md
+hugo new --kind chapter intro/_index.md
+hugo new --kind chapter linux-system/_index.md
+hugo new --kind chapter linux-commands/_index.md
+hugo new --kind chapter linux-scripting/_index.md
+hugo new --kind chapter linux-homework/_index.md
+```
