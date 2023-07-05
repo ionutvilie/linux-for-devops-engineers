@@ -25,7 +25,7 @@ module:
   #     target: static
 
 params:
-  editURL: "https://github.com/ionutvilie/linux-for-devops-engineers/edit/main/content/"
+  editURL: "https://github.com/ionutvilie/linux-for-devops-engineers/edit/master/content/"
   description: "Linux Training for DevOps Engineers"
   author: "ionutvilie"
   showVisitedLinks: true
