@@ -1,4 +1,10 @@
-# Course description
+---
+title: "Course Description"
+date: 2023-07-05T08:19:54+03:00
+weight: 6
+# categories: ["intro"]
+# tags: "intro"
+---
 
 Linux for DevOps Engineers
 
@@ -9,7 +15,7 @@ Duration: 2 days \| 3-4 hours/day
 This course is designed to help you quickly get started with learning Linux as an Application Administrator or DevOps Engineers. Beginning with understanding Linux from an OPS perspective you will learn about Linux filesystem and permissions, processes, basic and advanced commands useful for debugging os/application issues.
 
 * Day 1 – QuickStart, Basic Commands, Filesystem
-* Day 2 – Permissions, Processes, Advanced commands 
+* Day 2 – Permissions, Processes, Advanced commands
 
 ## Audience
 
@@ -24,4 +30,3 @@ None.
 In this course, we will use Ubuntu 20.04 a free resource from katakode.com
 
 [https://www.katacoda.com/scenario-examples/courses/environment-usages/ubuntu-2004](https://www.katacoda.com/scenario-examples/courses/environment-usages/ubuntu-2004)
-

@@ -1,4 +1,9 @@
-# Working with Filesystem
+---
+title: "Filesystem"
+date: 2023-07-05T08:19:54+03:00
+weight: 21
+draft: false
+---
 
 ## `df` & `du`
 
@@ -12,6 +17,6 @@ udev            1.9G     0  1.9G   0% /dev
 /dev/mmcblk0p1  253M   99M  154M  39% /boot/firmware
 /dev/mmcblk0p2   15G  3.5G   11G  26% /
 
-$ du -sh /mnt/sgt2t/     # s display only a total for each argument 
+$ du -sh /mnt/sgt2t/     # s display only a total for each argument
 633G    /mnt/sgt2t/
 ```

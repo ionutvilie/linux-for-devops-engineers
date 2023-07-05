@@ -1,4 +1,9 @@
-# Permissions
+---
+title: "Permissions"
+date: 2023-07-05T08:19:54+03:00
+weight: 3.3
+draft: false
+---
 
 * chmod - change file mode bits
 * chown - change file owner and group
@@ -6,12 +11,12 @@
 ## Understanding the security permissions
 
 ```bash
-$ ls -alh 
+$ ls -alh
 -rwxrwxrwx 1 ubuntu ubuntu   16 Jul  2 09:29 metasyntactic-vars
 drwxrwxrwx 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 
-# type  user  group  other  user    group  
-# -     rwx   rwx     rwx   ubuntu  ubuntu 
+# type  user  group  other  user    group
+# -     rwx   rwx     rwx   ubuntu  ubuntu
 # d     rwx   rwx     rwx   ubuntu  ubuntu
 ```
 
@@ -23,9 +28,9 @@ drwxrwxrwx 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 
 ### Read, Write and Execute
 
-* `r` stands for read 
-* `w` stands for write 
-* `x` stands for execute 
+* `r` stands for read
+* `w` stands for write
+* `x` stands for execute
 * `-` it is a file
 * `d` it is a directory
 
@@ -39,7 +44,7 @@ A combination of the letters ugoa controls which users access to the file will b
 
 ```bash
 $ chmod 000 shared/
-$ ls -lh 
+$ ls -lh
 -rwxrwxrwx 1 ubuntu ubuntu   16 Jul  2 09:29 metasyntactic-vars
 d--------- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 ```
@@ -57,7 +62,7 @@ drwx------ 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 
 ```bash
 $ chmod g+rw shared/
-$ ls -lh 
+$ ls -lh
 -rwxrwxrwx 1 ubuntu ubuntu   16 Jul  2 09:29 metasyntactic-vars
 drwxrw---- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 ```
@@ -66,7 +71,7 @@ drwxrw---- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 
 ```bash
 $ chmod o+r shared/
-$ ls -lh 
+$ ls -lh
 -rwxrwxrwx 1 ubuntu ubuntu   16 Jul  2 09:29 metasyntactic-vars
 drwxrw-r-- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 ```
@@ -75,7 +80,7 @@ drwxrw-r-- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 
 ```bash
 $ chmod u-x shared/
-$ ls -lh 
+$ ls -lh
 -rwxrwxrwx 1 ubuntu ubuntu   16 Jul  2 09:29 metasyntactic-vars
 drw-rw-r-- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 ```
@@ -84,12 +89,12 @@ drw-rw-r-- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 
 ```bash
 $ chmod g-w shared/
-$ ls -l 
+$ ls -l
 -rwxrwxrwx 1 ubuntu ubuntu   16 Jul  2 09:29 metasyntactic-vars
 drw-r--r-- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 ```
 
-1. Combinations 
+1. Combinations
 
 ```bash
 chmod +x script.sh             # makes script executable by all similar to: chmod a+x script.sh
@@ -119,7 +124,7 @@ chmod 744 shared/  # u=rwx,g=r,o=r
 chmod 755 shared/  # u=rwx,g=rx,o=rx
 ```
 
-1. change recursively 
+1. change recursively
 
 ```bash
 $ tree tmp/test/
@@ -176,4 +181,3 @@ total 4.0K
 drwxr--r-- 2 ubuntu ubuntu 4.0K Jul  2 18:05 shared
 ./foo/shared:
 ```
-

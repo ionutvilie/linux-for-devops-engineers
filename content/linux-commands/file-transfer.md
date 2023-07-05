@@ -1,4 +1,9 @@
-# File transfer
+---
+title: "File transfer"
+date: 2023-07-05T08:19:54+03:00
+weight: 25
+draft: false
+---
 
 Transfer files between servers
 
@@ -21,7 +26,7 @@ It is famous for its delta-transfer algorithm, which reduces the amount of data 
 
 ```bash
 # sync current dir to remote dir
-rsync -avz . ubuntu@raspberrypi-live:~/work 
+rsync -avz . ubuntu@raspberrypi-live:~/work
 # sync remote dir to current dir
 rsync -avz ubuntu@raspberrypi-live:~/work .
 ```

@@ -1,4 +1,9 @@
-# Others
+---
+title: "Others"
+date: 2023-07-05T08:19:54+03:00
+weight: 26
+draft: false
+---
 
 ## `tar`
 
@@ -7,14 +12,14 @@ An archive utility
 ```bash
 tar -cvf test.tar /tmp/test/     # Create Verbosely Filename
 tar -cvzf test.tar.gz /tmp/test/ # Create Verbosely gzip Filename
-# instructs tar to change dir to /tmp/test and start create archive from there 
-tar --strip-components=1 -cvzf test.tar.gz -C /tmp/test/ .       
+# instructs tar to change dir to /tmp/test and start create archive from there
+tar --strip-components=1 -cvzf test.tar.gz -C /tmp/test/ .
 
 tar -tvf test.tar.gz             # List Verbosely archive content
 
 tar -xvf test.tar                # Extract Verbosely Archive
 tar -xvf test.tar.gz             # Extract Verbosely gzip Archive
-# extract a single file from an archive 
+# extract a single file from an archive
 tar --extract --file=test.tar.gz tmp/test/foo/metasyntactic-vars
 ```
 
@@ -47,10 +52,10 @@ beta gamma delta
 # TODO
 
 ```bash
-ln                      #  
+ln                      #
 nslookup google.ro      # query Internet name servers
 ping                    # ping a remote host, ping uses ICMP type 8 (echo message) and type 0 (echo reply message)
-                        # some host block ICMP giving a false-positive of unreachable host                    
+                        # some host block ICMP giving a false-positive of unreachable host
 
 crontab                 #
 regex                   #
@@ -63,4 +68,3 @@ trap                    # trap
 
 * [https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/)
 * [https://cheatography.com/davechild/cheat-sheets/linux-command-line/](https://cheatography.com/davechild/cheat-sheets/linux-command-line/)
-

@@ -1,4 +1,9 @@
-# Filesystem
+---
+title: "Linux Filesystem"
+date: 2023-07-05T08:19:54+03:00
+weight: 11
+draft: false
+---
 
 A simple description of the UNIX system, also applicable to Linux, is this:
 
@@ -54,14 +59,14 @@ udev            1.9G     0  1.9G   0% /dev
 /dev/mmcblk0p1  253M   99M  154M  39% /boot/firmware
 /dev/mmcblk0p2   15G  3.5G   11G  26% /
 /dev/sda2       1.8T  633G  1.1T  37% /mnt/sgt2t
-$ du -sh /mnt/sgt2t/     # s display only a total for each argument 
+$ du -sh /mnt/sgt2t/     # s display only a total for each argument
 633G    /mnt/sgt2t/
 ```
 
 During system startup, all the partitions are thus mounted, as described in the file /etc/fstab
 
 ```bash
-cat /etc/fstab 
+cat /etc/fstab
 LABEL=writable    /     ext4    defaults    0 0
 LABEL=system-boot       /boot/firmware  vfat    defaults        0       1
 # mount seagate 2T drive
@@ -83,7 +88,7 @@ Linux file system starts with /, the root directory. All other directories are '
 /lost+found         # contains recovered bits of corrupted files
 /media              # is where external storage will be automatically mounted when you plug it in and try to access it
 /mnt                # a place to manually mount storage devices or partitions
-/opt                # a place to install system-wide third party software 
+/opt                # a place to install system-wide third party software
 /proc               # !! contains information about your computer, such as information about your CPU
 /root               # !! is the home directory of the superuser (also known as the “Administrator”) of the system
 /run                # !! System processes use it to store temporary data
@@ -93,7 +98,7 @@ Linux file system starts with /, the root directory. All other directories are '
 /sys                # contains information from devices connected to the machine
 /tmp                # contains temporary files
 /usr                # contains system-wide shared data
-/var                # Contains variable data like system logging files, 
+/var                # Contains variable data like system logging files,
                     # mail and printer spool directories, and transient and temporary files
 ```
 
@@ -119,7 +124,7 @@ At the time a new file is created, it gets a free inode. In that inode is the fo
 The only information not included in an inode is the file name and directory. These are stored in the special directory files. By comparing file names and inode numbers, the system can make up a tree-structure that the user understands. Users can display inode numbers using the `-i` option to ls. The inodes have their own separate space on the disk.
 
 ```bash
-df -i /dev/sda2 
+df -i /dev/sda2
 Filesystem        Inodes IUsed     IFree IUse% Mounted on
 /dev/sda2      122085376 30050 122055326    1% /mnt/sgt2t
 ```
@@ -127,6 +132,5 @@ Filesystem        Inodes IUsed     IFree IUse% Mounted on
 ## Sources:
 
 * [https://tldp.org/LDP/intro-linux/html/sect\_03\_01.html](https://tldp.org/LDP/intro-linux/html/sect_03_01.html)
-* [https://www.linux.com/training-tutorials/linux-filesystem-explained/](https://www.linux.com/training-tutorials/linux-filesystem-explained/)  
+* [https://www.linux.com/training-tutorials/linux-filesystem-explained/](https://www.linux.com/training-tutorials/linux-filesystem-explained/)
 * [https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/the-root-directory.html](https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/the-root-directory.html)
-

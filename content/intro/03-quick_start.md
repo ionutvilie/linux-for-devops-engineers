@@ -1,10 +1,16 @@
-# Quick Start
+---
+title: "Quick Start"
+date: 2023-07-05T08:19:54+03:00
+weight: 7
+# categories: ["intro"]
+# tags: "intro"
+---
 
 ## Don't
 
 * Make the user `root` \(system administrator's account\) accessible via ssh.
 * Run applications as root, applications might contain a vulnerability if the application is compromised it can run malicious code as root.
-* copy/paste `rm select * from ...` in your console, careful with what you have in your system clipboard.  
+* copy/paste `rm select * from ...` in your console, careful with what you have in your system clipboard.
 
 ## Avoid
 
@@ -39,10 +45,7 @@ Popular shells: bash, zsh, ksh, dash, sh
 
 ```bash
 # man [command]
-man ls           # see manual for ls command 
-# command --help (long) 
+man ls           # see manual for ls command
+# command --help (long)
 ps --help        # print program help
 ```
-
-
-

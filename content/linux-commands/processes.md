@@ -1,4 +1,9 @@
-# Processes
+---
+title: "Processes"
+date: 2023-07-05T08:19:54+03:00
+weight: 25
+draft: false
+---
 
 ## List processes
 
@@ -9,7 +14,7 @@
 
 ```bash
 top
-top -U ubuntu  # top user processes 
+top -U ubuntu  # top user processes
 htop
 ```
 
@@ -21,8 +26,8 @@ ps displays information about a selection of the active processes.
 ps -ef                                       # (-e) list all processes and (-f) do full-format listing
 ps axjf        #   ps -ejH                   # To print a process tree
 ps axms        #   ps -eLf                   # To get info about threads
-ps -eo euser,ruser,suser,fuser,f,comm,label  # To get security info 
-ps axZ         #   ps -eM                    # To get security info 
+ps -eo euser,ruser,suser,fuser,f,comm,label  # To get security info
+ps axZ         #   ps -eM                    # To get security info
 ps -u ubuntu                                 # list only ubuntu user processes
 ps -eo pid,nice,user,args --sort nice        # user-defined format
 ps -eo '%p %n %u %a' --sort nice             # same as above but with aix format descriptors
@@ -33,8 +38,8 @@ ps -eo '%p %n %u %a' --sort nice             # same as above but with aix format
 display a tree of processes
 
 ```bash
-pstree 
-pstree -a 
+pstree
+pstree -a
 pstree -a -C age
 ```
 
@@ -55,7 +60,7 @@ $ pidof -x ./script.sh  # find the pid of a script
 * pgrep, pkill - look up or signal processes based on name and other attributes
 
 ```bash
-kill [PID]                # 
+kill [PID]                #
 kill -9 [PID]             # SIGKILL aka force kill
 kill -15 [PID]            # SIGTERM aka  nice kill
 kill -l                   # list all signals
@@ -85,7 +90,7 @@ nice -5 tar -czf backup.tar.gz /home/ubuntu   # nice -PRIORITY COMMAND
 ps -eo pid,nice,user,args --sort nice         # determine the niceness of a command
 $ ps -eo pid,nice,user,args | grep dockerd
    2000   0 root     /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-$ renice -n -2  -u dockerd 
+$ renice -n -2  -u dockerd
 # or
 $ renice -n -2  -p 2000
 ```
@@ -106,13 +111,13 @@ nohup backup-database.sh &  # execute a long running command and continue to wor
 $ printf "%s\n%s\n"  '#!/bin/bash' 'while true; do echo $(date --rfc-3339=seconds) >>/tmp/running.test ; sleep 1 ; done' > script.sh
 $ chmod +x script.sh            # add execute flag to script
 $ ./script.sh                   # run script
-$ ctrl+z                        # hit control + z 
+$ ctrl+z                        # hit control + z
 ^Z
 [1]+  Stopped                 ./script.sh
 $ jobs                          # list jobs
 [1]+  Stopped                 ./script.sh
 $ bg %1                         # run job 1 in background
-$ tail -10f /tmp/running.test   # check if script is running in background    
+$ tail -10f /tmp/running.test   # check if script is running in background
 2020-07-02 17:26:54+00:00       # <>
 2020-07-02 17:27:10+00:00       # time when job was stopped with ctrl+z
 2020-07-02 17:27:11+00:00
@@ -122,7 +127,7 @@ jobs
 kill %1                        # kill job with id 1
 $ jobs
 [1]+  Terminated              ./script.sh
-$ ./script.sh 
+$ ./script.sh
 ^Z
 [1]+  Stopped                 ./script.sh
 stop %1                       # stops a bg process
@@ -133,4 +138,3 @@ stop %1                       # stops a bg process
 * [tecmint: linux-process-priority](https://www.tecmint.com/set-linux-process-priority-using-nice-and-renice-commands/)
 * [tlpd: Job Control Commands](https://www.tldp.org/LDP/abs/html/x9644.html)
 * linux man pages
-

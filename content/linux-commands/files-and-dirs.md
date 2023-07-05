@@ -1,4 +1,9 @@
-# Working with files and directory's
+---
+title: "Files and directory's"
+date: 2023-07-05T08:19:54+03:00
+weight: 22
+draft: false
+---
 
 * "On a UNIX system, everything is a file; if something is not a file, it is a process."
 * A directory is just a file containing names of other files
@@ -43,7 +48,7 @@ $ ls -ltr /var/log/       # t (sort by modification time, newest first) r (rever
 Short for concatenate, it is used to list the contents of a file on the standard output \(stdout\)
 
 ```bash
-$ cat metasyntactic-vars.txt 
+$ cat metasyntactic-vars.txt
 foo
 bar
 buz

@@ -1,4 +1,11 @@
-# Working with text files
+---
+title: "Text Files"
+date: 2023-07-05T08:19:54+03:00
+weight: 23
+draft: false
+---
+
+Working with text files
 
 ## `head` & `tail`
 
@@ -17,7 +24,7 @@ tail -20f  /var/log/syslog       # print last 30 lines from syslog and follow
 compare files line by line
 
 ```bash
-diff  /tmp/test/foo/metasyntactic-vars /tmp/test/bar/metasyntactic-vars    
+diff  /tmp/test/foo/metasyntactic-vars /tmp/test/bar/metasyntactic-vars
 diff -c /tmp/test/foo/metasyntactic-vars /tmp/test/bar/metasyntactic-vars  # context
 diff -u /tmp/test/foo/metasyntactic-vars /tmp/test/bar/metasyntactic-vars  # unified
 ```
@@ -58,7 +65,7 @@ sort - sort lines of text files uniq - report or omit repeated lines \(works wit
 
 ```bash
 # sorts the line
-echo 'alpha beta gamma delta alpha beta gamma delta' | tr " " "\n" | sort 
+echo 'alpha beta gamma delta alpha beta gamma delta' | tr " " "\n" | sort
 # shows uniq lines
 echo 'alpha beta gamma delta alpha beta gamma delta' | tr " " "\n" | sort | uniq
 # prefix lines by the number of occurrences
