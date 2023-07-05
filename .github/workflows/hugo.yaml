@@ -9,7 +9,7 @@ on:
     paths-ignore:
       - ".github/**"
       - ".github/workflows/**"
-      - "readme.md"
+      - "README.md"
       - "hugo.md"
   workflow_dispatch:
 permissions:
