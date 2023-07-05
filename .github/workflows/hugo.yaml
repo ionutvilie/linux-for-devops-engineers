@@ -4,7 +4,13 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
+      - master
       - main
+    paths-ignore:
+      - ".github/**"
+      - ".github/workflows/**"
+      - "readme.md"
+      - "hugo.md"
   workflow_dispatch:
 permissions:
   contents: read
