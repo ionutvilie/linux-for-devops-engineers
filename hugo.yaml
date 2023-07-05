@@ -1,6 +1,9 @@
-baseURL: "http://example.org/"
+baseURL: http://example.com/linux-for-devops-engineers
 languageCode: "en-us"
 title: "linux-for-devops"
+canonifyURLs: true
+relativeURLs: true
+uglyURLs: true
 
 menu:
   shortcuts:
@@ -60,3 +63,5 @@ params:
 
 outputs:
   home: ["HTML", "RSS", "SEARCH"]
+  section: ["HTML", "RSS", "PRINT"]
+  page: ["HTML", "RSS", "PRINT"]
