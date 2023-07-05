@@ -31,13 +31,13 @@ with echo: Hello World
 {{% /tab %}}
 
 {{% tab title="Files" %}}
-[hello-world.sh](assets/hello-world.sh)
+[hello-world.sh](/assets/hello-world.sh)
 {{% /tab %}}
 {{< /tabs >}}
 
 ### fun coffee break script
 
-[Coffee Break Script](assets/coffee-break-script.sh)
+[Coffee Break Script](/assets/coffee-break-script.sh)
 
 ### tools
 

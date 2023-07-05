@@ -1,28 +1,35 @@
 baseURL: "http://example.org/"
 languageCode: "en-us"
 title: "linux-for-devops"
+
+menu:
+  shortcuts:
+    - name: <i class='fab fa-fw fa-github'></i> linux-for-devops-engineers
+      url: "https://github.com/ionutvilie/linux-for-devops-engineers"
+      weight: 2
+
 module:
   imports:
     - path: github.com/McShelby/hugo-theme-relearn
-  # mounts:
-  #   - source: archetypes
-  #     target: archetypes
-  #   - source: assets
-  #     target: assets
-  #   - source: content
-  #     target: content
-  #   - source: data
-  #     target: data
-  #   - source: i18n
-  #     target: i18n
-  #   - source: ../images
-  #     target: static/images
-  #   - source: static/images
-  #     target: static/images
-  #   - source: layouts
-  #     target: layouts
-  #   - source: static
-  #     target: static
+  mounts:
+    # - source: assets
+    #   target: assets
+    - source: archetypes
+      target: archetypes
+    - source: content
+      target: content
+    # - source: data
+    #   target: data
+    # - source: i18n
+    #   target: i18n
+    # - source: ../images
+    #   target: static/images
+    # - source: static/images
+    #   target: static/images
+    # - source: layouts
+    #   target: layouts
+    # - source: static
+    #   target: static
 
 params:
   editURL: "https://github.com/ionutvilie/linux-for-devops-engineers/edit/master/content/"
